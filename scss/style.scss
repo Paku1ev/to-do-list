@@ -1,0 +1,63 @@
+$font: 'Montserrat', sans-serif;
+
+body {
+    background-color: #5E5562;
+    font-family: sans-serif;
+    font-family: $font;
+}
+h1 {
+    color: white;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+
+//Класс important нужен для стилизации сделанных задач
+.important {
+    font-weight: bold;
+    color: rgb(203, 231, 45);
+}
+.container {
+    margin: 0 auto;
+    background-color: #892AB6;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px black;
+}
+.to-do-list {
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#input-task {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.input__btn {
+    font-size: 16px;
+    padding: 15px 45px;
+    background-color: #892AB6;
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s;
+    &:hover {
+        background-color: #d81084;
+        cursor: pointer;
+    }
+}
+.wrapper {
+    align-self: flex-start;
+    color: white;
+    width: 100%;
+    li {
+        border-top: 1px solid white;
+        padding: 10px 0;
+        width: 93%;
+        &:first-child {
+            border: none;
+        }
+    }
+}
